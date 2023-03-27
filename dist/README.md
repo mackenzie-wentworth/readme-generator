@@ -1,7 +1,7 @@
 
   # 
 
-  [![ISC license](https://img.shields.io/badge/License-ISC-lightgrey.svg)]
+  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
   ## Description
    
@@ -28,10 +28,10 @@
 
 
 ## Questions
-If you have any questions, please contact me at the following:
-* GitHub: mackenzie 
-* GitHub URL: lkfdjsaklfj
-* Email: flkdsajklfd
+If you have any questions, please see my contact information below to reach out to me:
+* GitHub Username:  
+* GitHub URL: 
+* Email: 
 
 ## License
-This project is covered under the ISC license. For more details, please click the license button at the top of the page.
+This project is covered under the Apache license. For more details, please click the license button at the top of the page.
