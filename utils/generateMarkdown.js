@@ -2,9 +2,20 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   console.log("license " + license);
-  var licenseLink = " ";
+    if (!license) {
+      return ""; 
+    } else {
+      return `[![${license} license](https://img.shields.io/badge/License-${license}-lightgrey)]`
+    }
+ };
 
-  if (license === "Apache") {
+
+// TODO: Create a function that returns the license link
+// If there is no license, return an empty string
+function renderLicenseLink(license) {
+  if (!license) {
+    return ""; 
+   } else if (license === "Apache") {
     licenseLink = `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
   } else if (license === "Academic") {
     licenseLink = `![badge](https://img.shields.io/badge/license-Academic-brightgreen)`;
@@ -18,19 +29,8 @@ function renderLicenseBadge(license) {
     licenseLink = `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`;
   } else if (license === "Open") {
     licenseLink = `[![License: ODbL](https://img.shields.io/badge/License-ODbL-brightgreen.svg)](https://opendatacommons.org/licenses/odbl/)`;
-  } else {
-    licenseLink = `[![badge](https://img.shields.io/badge/license-None-lightgrey)`;
-  }
-
-  return licenseLink;
-
-
-
+  } 
 }
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string

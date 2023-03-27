@@ -11,31 +11,31 @@ const questions = [
         message: 'What is the title of your project? (Required)',
         name: 'projectTitle',
       },
-      // {
-      //   type: 'input',
-      //   message: 'Please enter a brief description of your project. (Required)',
-      //   name: 'description',
-      // },
-      // {
-      //   type: 'input',
-      //   message: 'Please describe the installation instructions to install your project. (Required)',
-      //   name: 'installation',
-      // },
-      // {
-      //   type: 'input',
-      //   message: 'Please describe the usage of your project. What are the instructions to use the program? (Required)',
-      //   name: 'usage',
-      // },
-      // {
-      //   type: 'input',
-      //   message: 'Please enter the contribution guidelines. Who are the contributors for this project? (Required)',
-      //   name: 'contributing',
-      // },
-      // {
-      //   type: 'input',
-      //   message: 'Please enter your instructions for testing. (Required)',
-      //   name: 'tests',
-      // },
+      {
+        type: 'input',
+        message: 'Please enter a brief description of your project. (Required)',
+        name: 'description',
+      },
+      {
+        type: 'input',
+        message: 'Please describe the installation instructions to install your project. (Required)',
+        name: 'installation',
+      },
+      {
+        type: 'input',
+        message: 'Please describe the usage of your project. What are the instructions to use the program? (Required)',
+        name: 'usage',
+      },
+      {
+        type: 'input',
+        message: 'Please enter the contribution guidelines. Who are the contributors for this project? (Required)',
+        name: 'contributing',
+      },
+      {
+        type: 'input',
+        message: 'Please enter your instructions for testing. (Required)',
+        name: 'tests',
+      },
       {
         type: 'input',
         message: 'Would you like to add a License to your project?',
@@ -55,21 +55,21 @@ const questions = [
         ],
         name: "licenseOptions",
     },
-      // {
-      //   type: 'input',
-      //   message: 'Please enter your GitHub username. (Required)',
-      //   name: 'questions-username',
-      // },
-      // {
-      //   type: 'input',
-      //   message: 'Please enter the URL for your project respository in GitHub. (Required)',
-      //   name: 'questions-url',
-      // },
-      // {
-      //   type: 'input',
-      //   message: 'Please enter your email address. (Required)',
-      //   name: 'questions-email',
-      // },
+      {
+        type: 'input',
+        message: 'Please enter your GitHub username. (Required)',
+        name: 'questions-username',
+      },
+      {
+        type: 'input',
+        message: 'Please enter the URL for your project respository in GitHub. (Required)',
+        name: 'questions-url',
+      },
+      {
+        type: 'input',
+        message: 'Please enter your email address. (Required)',
+        name: 'questions-email',
+      },
 ];
 
 // TODO: Create a function to write README file
