@@ -37,11 +37,6 @@ const questions = [
         name: 'tests',
       },
       {
-        type: 'input',
-        message: 'Would you like to add a License to your project?',
-        name: 'license',
-      },
-      {
         type: "list",
         message: "Please choose the appropriate license for your project: ",
         choices: [
@@ -53,22 +48,22 @@ const questions = [
             "Mozilla",
             "Open"
         ],
-        name: "licenseOptions",
+        name: "license",
     },
       {
         type: 'input',
         message: 'Please enter your GitHub username. (Required)',
-        name: 'questions-username',
+        name: 'username',
       },
       {
         type: 'input',
         message: 'Please enter the URL for your project respository in GitHub. (Required)',
-        name: 'questions-url',
+        name: 'github',
       },
       {
         type: 'input',
         message: 'Please enter your email address. (Required)',
-        name: 'questions-email',
+        name: 'email',
       },
 ];
 
