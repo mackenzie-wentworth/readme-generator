@@ -7,39 +7,68 @@ const generateMarkdown = require("./utils/generateMarkdown")
 const questions = [
     {
         type: 'input',
-        message: 'What is the title of your project?',
-        name: 'title',
+        message: 'What is the title of your project? (Required)',
+        name: 'projectTitle',
       },
-      // {
-      //   type: 'input',
-      //   message: 'What would you like to include in the Description section for your project?',
-      //   name: 'description',
-      // },
-      // {
-      //   type: 'input',
-      //   message: 'What would you like to include in the Table of Contents section?',
-      //   name: 'table-of-contents',
-      // },
-      // {
-      //   type: 'input',
-      //   message: 'What are the Installation Instructions for your project?',
-      //   name: 'installation-instructions',
-      // },
-      // {
-      //   type: 'input',
-      //   message: 'What would you like to include in the Usage Information section for your project?',
-      //   name: 'usage-information',
-      // },
-      // {
-      //   type: 'input',
-      //   message: 'What would you like to include in the Contribution Guidelines section for your project?',
-      //   name: 'contribution-guidelines',
-      // },
-      // {
-      //   type: 'input',
-      //   message: 'What would you like to include in the Test Instructions section for your project?',
-      //   name: 'test-instructions',
-      // },
+      {
+        type: 'input',
+        message: 'Please write a brief description of your project. (Required)',
+        name: 'description',
+      },
+      {
+        type: 'input',
+        message: 'Please list a Table of Contents. (Optional) If you would like to skip, press the ENTER key to move on to the next prompt.',
+        name: 'table-of-contents',
+      },
+      {
+        type: 'input',
+        message: 'Please describe the installation instructions to install your project. (Required)',
+        name: 'installation',
+      },
+      {
+        type: 'input',
+        message: 'Please describe the usage of your project. What are the instructions to use the program? (Required)',
+        name: 'usage',
+      },
+      {
+        type: 'input',
+        message: 'Please enter the contribution guidelines. Who are the contributors for this project? (Required)',
+        name: 'contributing',
+      },
+      {
+        type: 'input',
+        message: 'Please enter your instructions for testing',
+        name: 'tests',
+      },
+      {
+        type: "list",
+        message: "Please choose the appropriate license for your project: ",
+        choices: [
+            "Apache",
+            "Academic",
+            "GNU",
+            "ISC",
+            "MIT",
+            "Mozilla",
+            "Open"
+        ],
+        name: "license",
+    },
+      {
+        type: 'input',
+        message: 'Please enter your GitHub username',
+        name: 'questions',
+      },
+      {
+        type: 'input',
+        message: 'Please enter the URL for your project respository in GitHub. (Required)',
+        name: 'questions',
+      },
+      {
+        type: 'input',
+        message: 'Please enter your email address. (Required)',
+        name: 'questions',
+      },
 ];
 
 // TODO: Create a function to write README file
