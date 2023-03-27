@@ -18,11 +18,6 @@ const questions = [
       },
       {
         type: 'input',
-        message: 'Please list a Table of Contents. (Optional) If you would like to skip, press the ENTER key to move on to the next prompt.',
-        name: 'table-of-contents',
-      },
-      {
-        type: 'input',
         message: 'Please describe the installation instructions to install your project. (Required)',
         name: 'installation',
       },
@@ -88,6 +83,14 @@ function init() {
         );
     });
 
+}
+
+function generateMarkdwon(data) {
+  return `# ${data.projectTitle}
+
+  ## Description 
+  ${data.description}
+  `;
 }
 
 
