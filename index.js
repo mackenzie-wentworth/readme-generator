@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
+const generateMarkdown = require("./utils/generateMarkdown")
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -48,27 +49,36 @@ function writeToFile(fileName, data) {
 
 function init() {
   inquirer.prompt(questions)
-      .then((userResponse) => {
-          const filename = './readME-user-data.html';
+      // .then((userResponse) => {
+      //     const filename = './readME-user-data.html';
 
-          const readMeHtmlData = `<!DOCTYPE html>
-          <html lang="en">
-          <head>
-              <meta charset="UTF-8">
-              <meta http-equiv="X-UA-Compatible" content="IE=edge">
-              <meta name="viewport" content="width=device-width, initial-scale=1.0">
-              <title>Module 9 Mini Project</title>
-          </head>
-          <body>
-              <p>${userResponse.title} </p>
-          </body>
-          </html>`
+      //     const readMeHtmlData = `<!DOCTYPE html>
+      //     <html lang="en">
+      //     <head>
+      //         <meta charset="UTF-8">
+      //         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      //         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      //         <title>Module 9 Mini Project</title>
+      //     </head>
+      //     <body>
+      //         <p>${userResponse.title} </p>
+      //     </body>
+      //     </html>`
       
 
-          fs.writeFile(filename, readMeHtmlData, (err) =>
-              err ? console.log(err) : console.log('Success!')
-          );
-      });
+      //     fs.writeFile(filename, readMeHtmlData, (err) =>
+      //         err ? console.log(err) : console.log('Success!')
+      //     );
+      // });
+
+      .then((data) => {
+        const filename = './dist/README.md';
+        var readMeData = generateMarkdown(data);
+
+        fs.writeFile(filename, readMeData, (err) =>
+            err ? console.log(err) : console.log('Success!')
+        );
+    });
 
 }
 
