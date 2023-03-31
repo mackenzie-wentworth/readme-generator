@@ -34,7 +34,7 @@ function renderLicenseSection(license) {
   if (!license) {
     return " ";
   } else {
-    return `This project is covered under the ${license} license. For more details, please click the license button at the top of the page.`
+    return `This project is covered under the ${license} license. For more details, please click the license button under 'Badges' at the top of the page.`
   };
 }
 
@@ -43,18 +43,19 @@ function generateMarkdown(data) {
   return `
   # ${data.projectTitle}
 
+  ## Badges
   ${renderLicenseBadge(data.license)}
 
   ## Description
   ${data.description} 
 
   ## Table of Contents:
-  1. [Installation](#Installation)
-  2. [Usage](#Usage)  
-  3. [Contributing](#Contributing)
-  4. [Tests](#Tests)
-  5. [Questions](#Questions)
-  6. [License](#License)
+  1. [Installation](#installation)
+  2. [Usage](#usage)  
+  3. [Contributing](#contributing)
+  4. [Tests](#tests)
+  5. [Questions](#questions)
+  6. [License](#license)
 
 
 ## Installation
@@ -70,9 +71,8 @@ ${data.contributing}
 ${data.tests}
 
 ## Questions
-If you have any questions, please see my contact information below to reach out to me:
-* GitHub Username: ${data.username} 
-* GitHub URL: ${data.github}
+If you have any questions, please see my contact information below to reach me for inquiries:
+* GitHub: ${data.username}, at ${data.github}
 * Email: ${data.email}
 
 ## License
