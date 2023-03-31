@@ -62,6 +62,7 @@ After you've installed all necessary packages, you are now ready to start creati
 4. Once you've answered all prompts in the terminal, you will see your new README file under the `dist` folder in the directory menu.
 
 ### *Video Demonstration:*
+[video-demo_ PM.webm](https://user-images.githubusercontent.com/122484637/229249991-6071c4f8-6c28-4bbb-924c-64d21f7e1de0.webm)
 
 ### *What To Include In Your README?:*
 If you need further guidance on what to include in the sections of your README file, please visit the following resources: 
