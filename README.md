@@ -1,6 +1,6 @@
 # README Generator
 
- **Link to GitHub Repository**: 
+## Link to GitHub Repository: 
 To view the GitHub repository for "README Generator", please visit the following link: https://github.com/mackenzie-wentworth/readme-generator/tree/main
 
 
@@ -19,10 +19,10 @@ In order to utilize the README Generator for your own use, please be sure you ha
 * [Git Bash](https://www.educative.io/answers/how-to-install-git-bash-in-windows) or [Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) (to use in [Git](https://github.com/git-guides/install-git) command line)
 * [Node.js](https://nodejs.org/en)
 
-### Steps to Use README Generator:
-1. From within the "README Generator" respository on GitHub, click the "Code" button and copy the *SSH URL* to your clipboard.
+### Steps to Set Up Environment:
+1. From within the "README Generator" respository on GitHub, click the "Code" button and copy the `SSH URL` to your clipboard.
 
-2. Using the command line in your terminal, type the following `git clone` command and paste the *SSH URL* you just copied:  
+2. Using the command line in your terminal, type the following `git clone` command and paste the `SSH URL` you just copied:  
 
   ```bash
     git clone [github ssh url]
@@ -40,10 +40,31 @@ In order to utilize the README Generator for your own use, please be sure you ha
     npm i inquirer@8.2.4
   ```
 
+---
+
 ## Usage
+After you've installed all necessary packages, you are now ready to start creating your own README file! Please continue to the instructions and demonstration video below. 
 
+### How to Use README Generator:
+1. In VS Code, right-click on the `index.js` file from the directory menu to 'open in integrated terminal'
+2. In the terminal, type the following command:
 
-## Demonstration
+  ```bash
+    node index.js
+  ```
+
+3. You will then be greeted to follow a series of prompts so that you can input key information about your project.  
+
+    >**NOTE**: The answers that you enter in response to each prompt will display to your README file exactly as you type them.
+
+4. Once you've answered all prompts in the terminal, you will see your new README file under the `dist` folder in the directory menu.
+
+### Video Demonstration:
+
+### What To Include In Your README?:
+If you need further guidance on what to include in the sections of your README file, please visit the following resources: 
+* **The Full-Stack Blog**: https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
+* **Great Learning**: https://www.mygreatlearning.com/blog/readme-file/
 
 ---
 
@@ -51,8 +72,3 @@ In order to utilize the README Generator for your own use, please be sure you ha
 If you have any questions, please see my contact information below to reach me for inquiries:
 * **GitHub**: mackenzie-wentworth, at https://github.com/mackenzie-wentworth
 * **Email**: mwentworth28@gmail.com
-
-## Credits
-For additional details to create your README file, please feel free to visit the following resources:
-* **The Full-Stack Blog**: https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
-* **Great Learning**: https://www.mygreatlearning.com/blog/readme-file/
