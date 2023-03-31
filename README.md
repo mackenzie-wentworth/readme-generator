@@ -22,6 +22,8 @@ In order to utilize the README Generator for your own use, please be sure you ha
 ### *Steps to Set Up Environment:*
 1. From within the "README Generator" respository on GitHub, click the "Code" button and copy the `SSH URL` to your clipboard.
 
+    ![An image to demonstrate where in GitHub to click the green "code" button to copy SSH URL.](./assets/images/copy-ssh-url.png)
+
 2. Using the command line in your terminal, type the following `git clone` command and paste the `SSH URL` you just copied:  
 
     ```bash
