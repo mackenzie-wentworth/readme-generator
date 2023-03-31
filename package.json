@@ -1,6 +1,7 @@
 {
   "name": "static-site",
   "version": "1.0.0",
+
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,6 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "inquirer": "^8.2.4"
+  },
+  "keywords": [],
+  "description": ""
     "inquirer": "^6.3.1"
   }
 }
