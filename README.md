@@ -1,4 +1,4 @@
-# readme-generator
+# README Generator
 
 ## Link to GitHub Repository
 To view the GitHub repository for "README Generator", please visit the following link: https://github.com/mackenzie-wentworth/readme-generator/tree/main

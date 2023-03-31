@@ -5,6 +5,7 @@ const util = require("util");
 const generateMarkdown = require("./utils/generateMarkdown")
 
 // TODO: Create an array of questions for user input
+// User answers to the prompts will generate data for each section of the README
 const questions = [
     {
         type: 'input',
@@ -72,6 +73,7 @@ function writeToFile(fileName, data) {
 }
 
 // TODO: Create a function to initialize app
+// generate a README.md under "dist" folder
 function init() {
   inquirer.prompt(questions)
       .then((data) => {
