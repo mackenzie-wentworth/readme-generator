@@ -70,7 +70,7 @@ ${data.contributing}
 ## Tests
 ${data.tests}
 
-## Questions
+## Questions?
 If you have any questions, please see my contact information below to reach me for inquiries:
 * GitHub: ${data.username}, at ${data.github}
 * Email: ${data.email}
