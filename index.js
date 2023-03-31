@@ -57,7 +57,7 @@ const questions = [
       },
       {
         type: 'input',
-        message: 'Please enter the URL for your project respository in GitHub. (Required)',
+        message: 'Please enter the URL to your GitHub profile. (Required)',
         name: 'github',
       },
       {
